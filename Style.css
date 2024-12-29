@@ -1,0 +1,224 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, rgba(175,175,198,1) 0%, rgba(244,244,249,1) 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #d2b356;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+header .btn {
+    display: inline-block;
+    background-color: #1553a5;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+header .btn:hover {
+    background-color: #c19207;
+    transform: scale(1.05);
+}
+
+/* Formulaire */
+form {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    color: #4b5563;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+    border-color: #d2b356;
+}
+
+form button {
+    background-color: #d2b356;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #c19207;
+    transform: scale(1.05);
+}
+
+/* Menu de Navigation */
+nav ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 40px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav ul li a {
+    background-color: #d2b356;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #c19207;
+    transform: scale(1.05);
+}
+
+/* Quiz - Questions */
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#question-container label {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 2px solid #fff;
+}
+
+footer a {
+    color: #d2b356;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}

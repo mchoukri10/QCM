@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Results</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Your Results</h1>
+  <div id="result-score">
+    <span>Your score: <span id="scoreShow">0</span></span>
+  </div>
+
+  <!-- View answers button (Optional) -->
+  <button onclick="viewAnswers()">View Answers</button>
+  <script>
+    function viewAnswers() {
+      window.location.href = "answers.html";
+    }
+  </script>
+
+  <script>
+    // Retrieve the score from localStorage
+    let qs = localStorage.getItem("quizScore");
+    let fsr = localStorage.getItem("fsr");
+
+    if (qs !== null) {
+      document.getElementById("scoreShow").textContent = qs;
+    } else {
+      document.getElementById("scoreShow").textContent = fsr;
+    }
+  </script>
+
+</body>
+
+</html>
